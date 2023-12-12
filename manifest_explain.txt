@@ -1,0 +1,62 @@
+{
+    "manifest_version": 3, // manifest version 3
+    "name": "CineAid", // name of extension
+    "version": "1.0", // verson of extension
+    "description": "Get all the information about your movie/ tvseries instantaneously to help you decide if you want to watch it or not",
+    "permissions": [
+        "tabs" 
+    ],
+    "content_scripts": [ // which url to be active on 
+        {
+            "matches": ["*://www.netflix.com/*"],  //netflix
+            "js": ["content.js"]
+        },
+        {
+            "matches": ["*://www.primevideo.com/*"], //amazon prime video
+            "js": ["content.js"]
+        },
+        {
+            "matches": ["*://www.hotstar.com/*"], //disneyplus hotstar
+            "js": ["content.js"]
+        },
+        {
+            "matches": ["*://www.fmovies.to/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.ffmovies.to/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.fmoviesonline.in/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.fmoviezfree.com/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.123movies.com/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.123movies.to/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.123movies.quest/*"],
+            "js": ["popup.js"]
+        }
+    ],
+    "host_permissions": [  //allow acess to other 3rd party websites
+        "https://*.onrender.com/*" // allow acess to onrender where api hosted
+    ],
+    "icons": {
+        "128": "cineaid_icon.png" //logo of extension and 128 is pixel size
+        "16": "cineaid_icon.png",// good practice
+        "48": "cineaid_icon.png",//good practice
+    },
+    "action": {
+        "default_popup": "popup.html" //on clicking, open popup.html
+    }
+}

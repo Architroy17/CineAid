@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CineAid Popup</title>
+        <link rel="stylesheet" href="popup.css">
+    </head>
+    <body>
+        <table id="table">
+            <thead>
+                <tr id="head_row">
+                    <th colspan="2" id="heading">CineAid</th>
+                    <th><img src="cineaid_icon.png" id="logo"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="title_row">
+                    <td class="header">Title: </td>
+                    <td colspan="2" id="title"></td>
+                </tr>
+                <tr id="geanre_row">
+                    <td class="header">Genre: </td>
+                    <td colspan="2" id="genre"></td>
+                </tr>
+                <tr id="Director_row">
+                    <td class="header">Director: </td>
+                    <td colspan="2" id="director"></td>
+                </tr>
+                <tr id="cast_row">
+                    <td class="header">Cast: </td>
+                    <td colspan="2" id="cast"></td>
+                </tr>
+                <tr id="rating1_row">
+                    <td colspan="3"  class="header">Ratings: </td>
+                </tr>
+                <tr id="rating2_row">
+                    <td class="header"><img src="imdb_icon.png" class="icon"> IMDb: </td>
+                    <td class="header"><img src="rotten_icon.png" class="icon"> Rotten Tomatoes: </td>
+                    <td class="header"><img src="metacritic_icon.png" class="icon"> MetaScore: </td>
+                </tr>
+                <tr id="rating3_row">
+                    <td id="imdb_ratings"></td>
+                    <td id="rotten_ratings"></td>
+                    <td id="meta_ratings"></td>
+                </tr>
+                <tr id="similar_row">
+                    <td class="header">Similar: </td>
+                    <td colspan="2" id="similar"></td>
+                </tr>
+                <tr id="review_row">
+                    <td class="header">Reviews: </td>
+                    <td colspan="2" id="reviews"></td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="popup.js"></script>
+    </body>
+</html>

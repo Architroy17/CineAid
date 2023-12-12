@@ -1,0 +1,81 @@
+/* Reset some default styling for the body */
+body {
+    font-family: Arial, sans-serif; /* Set the font family */
+    background-color: #1a1a1a; /* Set the background color */
+    color: white; /* Set the text color */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+/* Styling for table cells (th, td) */
+th, td {
+    border: none; /* Remove borders */
+    padding: 8px; /* Set padding */
+    text-align: left; /* Align text to the left */
+}
+
+/* Styling for table header cells (th) */
+th {
+    background-color: #333; /* Set background color for header cells */
+    color: white; /* Set text color for header cells */
+}
+
+/* Styling for the main table */
+#table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse; /* Collapse borders between cells */
+    text-align: center; /* Center-align text in cells */
+}
+
+/* Styling for specific elements within the table */
+#movie-info {
+    margin-top: 20px; /* Set top margin for movie-info */
+}
+
+/* Styling for the CineAid logo */
+#logo {
+    border-radius: 8px; /* Add border radius for rounded corners */
+    width: 30px; /* Set width of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for rating icons */
+.icon {
+    width: 20px; /* Set width for rating icons */
+    height: 20px; /* Set height for rating icons */
+    border-radius: 20px; /* Add border radius for rounded icons */
+}
+
+/* Styling for header text */
+.header {
+    text-align: center; /* Center-align header text */
+}
+
+/* Styling for the main heading */
+#heading {
+    text-align: right; /* Right-align the heading */
+    font-size: 30px; /* Set font size for the heading */
+}
+
+/* Styling for movie title, genre, director, and cast */
+#title, #geanre, #director, #cast {
+    text-transform: capitalize; /* Capitalize text */
+    text-align: center; /* Center-align text */
+}
+
+/* Styling for IMDb, Rotten Tomatoes, and MetaScore ratings */
+#imdb_ratings, #meta_ratings, #rotten_ratings {
+    text-align: center; /* Center-align ratings */
+}
+
+/* Styling for similar movies and reviews */
+#similar, #reviews {
+    text-align: center; /* Center-align text */
+    text-align: justify; /* Justify text */
+}
+
+/* Styling for specific rows in the table */
+#head_row, #title_row, #geanre_row, #director_row, #cast_row, #rating1_row,
+#rating2_row, #rating3_row, #similar_row, #review_row {
+    padding: 10px; /* Set padding for these rows */
+}

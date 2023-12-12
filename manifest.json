@@ -1,0 +1,62 @@
+{
+    "manifest_version": 3,
+    "name": "CineAid",
+    "version": "1.0",
+    "description": "Get all the information about your movie/ tvseries instantaneously to help you decide if you want to watch it or not",
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://www.netflix.com/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.primevideo.com/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.hotstar.com/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.fmovies.to/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.ffmovies.to/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.fmoviesonline.in/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.fmoviezfree.com/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.123movies.com/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.123movies.to/*"],
+            "js": ["popup.js"]
+        },
+        {
+            "matches": ["*://www.123movies.quest/*"],
+            "js": ["popup.js"]
+        }
+    ],
+    "host_permissions": [
+        "https://*.onrender.com/*"
+    ],
+    "icons": {
+        "16": "cineaid_icon.png",
+        "48": "cineaid_icon.png",
+        "128": "cineaid_icon.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
